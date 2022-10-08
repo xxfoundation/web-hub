@@ -40,62 +40,6 @@ const Footer = () => {
               Mission
             </ListLink>
             <ListLink
-              to='https://xx.network/messenger/'
-              underline='hover'
-              rel='noopener'
-              target='_blank'
-            >
-              xx messenger
-            </ListLink>
-            <ListLink to='https://xx.network/' underline='hover' rel='noopener' target='_blank'>
-              xx network
-            </ListLink>
-            <ListLink to='https://xx.network/welcome/' underline='hover' rel='noopener' target='_blank'>
-              xx community
-            </ListLink>
-          </Grid>
-          <Grid item xs>
-            <ListLink
-              to='https://xx.network/developers'
-              underline='hover'
-              rel='noopener'
-              target='_blank'
-            >
-              Developers
-            </ListLink>
-            <ListLink to='https://wallet.xx.network' underline='hover' rel='noopener' target='_blank'>
-              xx wallet
-            </ListLink>
-            <ListLink
-              to='https://blockchainapi.xx.network'
-              underline='hover'
-              rel='noopener'
-              target='_blank'
-            >
-              xx blockchain api
-            </ListLink>
-            <ListLink
-              to='https://dashboard.xx.network'
-              underline='hover'
-              rel='noopener'
-              target='_blank'
-            >
-              cmix dashboard
-            </ListLink>
-            <ListLink
-              to='https://dashboard-api.xx.network'
-              underline='hover'
-              rel='noopener'
-              target='_blank'
-            >
-              cmix dashboard api
-            </ListLink>
-          </Grid>
-          <Grid item xs={12} md='auto'>
-            <ListLink to='https://xx.network/nodes' underline='hover' rel='noopener' target='_blank'>
-              Node Runners
-            </ListLink>
-            <ListLink
               to='https://xx.network/resources/'
               underline='hover'
               rel='noopener'
@@ -103,11 +47,34 @@ const Footer = () => {
             >
               Resources
             </ListLink>
+          </Grid>
+          <Grid item xs> 
+            <ListLink
+              to='https://xx.network/blockchain'
+              underline='hover'
+              rel='noopener'
+              target='_blank'
+            >
+              xx blockchain
+            </ListLink>
+            <ListLink
+              to='https://xx.network/messenger/'
+              underline='hover'
+              rel='noopener'
+              target='_blank'
+            >
+              xx messenger
+            </ListLink>
+            <ListLink to='https://xx.network/welcome/' underline='hover' rel='noopener' target='_blank'>
+              xx community
+            </ListLink>
+          </Grid>
+          <Grid item xs={12} md='auto'>
+            <ListLink to='https://xx.network/whitepapers' underline='hover' rel='noopener' target='_blank'>
+              Whitepapers
+            </ListLink>
             <ListLink to='https://xx.network/faq/' underline='hover' rel='noopener' target='_blank'>
               FAQ
-            </ListLink>
-            <ListLink to='https://forum.xx.network' underline='hover' rel='noopener' target='_blank'>
-              Technical Forum
             </ListLink>
             <ListLink to='https://xx.network/contact/' underline='hover' rel='noopener' target='_blank'>
               Contact Us
@@ -119,7 +86,7 @@ const Footer = () => {
         <Divider sx={{ mt: 2, mb: 3, borderColor: 'grey.400' }} />
         <Grid container justifyContent='space-between' spacing={3}>
           <Grid item xs={12} md={8}>
-            <Typography variant='body1' color='white'>
+            <Typography variant='body4' color='white'>
               xx Network does not distribute, offer, solicit sales of, or sell any xx coins in any
               state or jurisdiction in which such a distribution, offer, solicitation or sale
               would be unlawful prior to registration or qualification under the securities laws

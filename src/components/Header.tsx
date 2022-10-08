@@ -1,6 +1,3 @@
-import type { Endpoint } from '../types';
-import type { FC } from 'react';
-
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import {
   AppBar,
@@ -11,12 +8,14 @@ import {
   Toolbar,
   Link,
   styled,
-  MenuItem
+  Stack
 } from '@mui/material';
 import { useRef } from 'react';
 
 import useToggle from '../hooks/useToggle';
-import logo from '../assets/images/logos/xx-network-logo--white.svg';
+// import logo from '../assets/images/logos/xx-network-logo--white.svg';
+// import hub from '../assets/images/logos/xx_hub_logotype.svg';
+import hub_white from '../assets/images/logos/xx_hub_logotype_white.svg';
 
 export const MenuButton = styled(Button)(({ theme }) => ({
   textTransform: 'none',
@@ -66,91 +65,42 @@ const StyledContainer = styled(AppBar)(({ theme }) => ({
   background: theme.gradients?.primary,
 }));
 
-const AppsMenu = () => {
-  const button = useRef(null);
-  const [opened, { toggle, toggleOff: close }] = useToggle();
+// const WalletsMenu = () => {
+//   const button = useRef(null);
+//   const [opened, { toggle, toggleOff: close }] = useToggle();
 
-  return (
-    <>
-      <MenuButton
-        sx={{ color: 'white' }}
-        ref={button}
-        id='apps-button'
-        aria-controls={opened ? 'apps-menu' : undefined}
-        aria-haspopup='true'
-        aria-expanded={opened ? 'true' : undefined}
-        onClick={toggle}
-        endIcon={<KeyboardArrowDownIcon />}
-      >
-        Apps
-      </MenuButton>
-      {button.current && (
-        <Menu
-          id='apps-menu'
-          anchorEl={button.current}
-          open={opened}
-          onClose={close}
-          MenuListProps={{
-            'aria-labelledby': 'apps-button'
-          }}
-        >
-          <MenuLink href='https://sleeve.xx.network' onClick={close}>
-            Sleeve
-          </MenuLink>
-          <MenuLink href='https://wallet.xx.network'  onClick={close}>
-            Block Explorer
-          </MenuLink>
-          <MenuLink href='https://explorer.xx.network/staking/simple' onClick={close}>
-            Simple Staking
-          </MenuLink>
-          <MenuLink onClick={close}>
-            Governance
-          </MenuLink>
-          <MenuLink href='https://dashboard.xx.network' onClick={close}>
-            cmix Dashboard
-          </MenuLink>
-        </Menu>
-      )}
-    </>
-  );
-}
-
-const WalletsMenu = () => {
-  const button = useRef(null);
-  const [opened, { toggle, toggleOff: close }] = useToggle();
-
-  return (
-    <>
-      <MenuButton
-        sx={{ color: 'white' }}
-        ref={button}
-        id='apps-button'
-        aria-controls={opened ? 'wallets-menu' : undefined}
-        aria-haspopup='true'
-        aria-expanded={opened ? 'true' : undefined}
-        onClick={toggle}
-        endIcon={<KeyboardArrowDownIcon />}
-      >
-        Wallets
-      </MenuButton>
-      {button.current && (
-        <Menu
-          id='wallets-menu'
-          anchorEl={button.current}
-          open={opened}
-          onClose={close}
-          MenuListProps={{
-            'aria-labelledby': 'wallets-button'
-          }}
-        >
-          <MenuLink href='https://wallet.xx.network' onClick={close}>
-            Web Wallet
-          </MenuLink>
-        </Menu>
-      )}
-    </>
-  );
-}
+//   return (
+//     <>
+//       <MenuButton
+//         sx={{ color: 'white' }}
+//         ref={button}
+//         id='apps-button'
+//         aria-controls={opened ? 'wallets-menu' : undefined}
+//         aria-haspopup='true'
+//         aria-expanded={opened ? 'true' : undefined}
+//         onClick={toggle}
+//         endIcon={<KeyboardArrowDownIcon />}
+//       >
+//         Wallets
+//       </MenuButton>
+//       {button.current && (
+//         <Menu
+//           id='wallets-menu'
+//           anchorEl={button.current}
+//           open={opened}
+//           onClose={close}
+//           MenuListProps={{
+//             'aria-labelledby': 'wallets-button'
+//           }}
+//         >
+//           <MenuLink href='https://wallet.xx.network' onClick={close}>
+//             Web Wallet
+//           </MenuLink>
+//         </Menu>
+//       )}
+//     </>
+//   );
+// }
 
 const DocsMenu = () => {
   const button = useRef(null);
@@ -198,69 +148,26 @@ const DocsMenu = () => {
   );
 }
 
-const EndpointsMenu: FC<{ endpoints: Endpoint[] }> = ({ endpoints }) => {
-  const button = useRef(null);
-  const [opened, { toggle, toggleOff: close }] = useToggle();
-
-  return (
-    <>
-      <MenuButton
-        sx={{ color: 'white' }}
-        ref={button}
-        id='apps-button'
-        aria-controls={opened ? 'wallets-menu' : undefined}
-        aria-haspopup='true'
-        aria-expanded={opened ? 'true' : undefined}
-        onClick={toggle}
-        endIcon={<KeyboardArrowDownIcon />}
-      >
-        Endpoints
-      </MenuButton>
-      {button.current && (
-        <Menu
-          id='wallets-menu'
-          anchorEl={button.current}
-          open={opened}
-          onClose={close}
-          MenuListProps={{
-            'aria-labelledby': 'wallets-button'
-          }}
-        >
-            {endpoints.map((endpoint) => (
-              <MenuItem>
-                {endpoint.url},{' '}
-                {endpoint.host},{' '}
-                {endpoint.description}
-              </MenuItem>
-            ))}
-          
-        </Menu>
-      )}
-    </>
-  );
-}
-
-const endpoints: Endpoint[] = [
-  {
-    url: 'wss://mainnet.xxnet.io',
-    host: 'xxLabs',
-    description: 'Ipsum lorem and stuff'
-  }
-]
-
 const Header = () => (
   <StyledContainer position='static'>
     <Container maxWidth='lg'>
       <Toolbar sx={{ flexDirection: {xs: 'column', md: 'row'}, justifyContent: 'space-between'}}>
         <Link>
-          <img src={logo} />
+          <img src={hub_white} />
         </Link>
-        <Box>
-          <AppsMenu />
-          <WalletsMenu />
-          <DocsMenu />
-          <EndpointsMenu endpoints={endpoints} />
-        </Box>
+        <Stack direction={'row'} spacing={2} sx={{flexWrap: 'wrap', p: { xs: '1em 0 0 1.5em' }}}>
+          {/* <MenuButton href='https://wallet.xx.network/' sx={{ color: 'white' }}>
+            Wallet
+          </MenuButton> */}
+          <Box>
+            {/* <WalletsMenu /> */}
+            <DocsMenu />
+            {/* <EndpointsMenu endpoints={endpoints} /> */}
+          </Box>
+        </Stack>
+        {/* <Button variant='contained' sx={{backgroundColor: 'white', p: '0.75em'}}>
+          <img src={hub} />
+        </Button> */}
       </Toolbar>
     </Container>
   </StyledContainer>

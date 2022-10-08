@@ -1,22 +1,25 @@
+/* eslint-disable @typescript-eslint/no-shadow */
 import type { Product } from '../types'
 
 import React, { FC } from 'react';
-import { styled, Box, Link, Typography, Stack, Button } from '@mui/material';
+import { styled, Box, Typography, Stack, Button } from '@mui/material';
 
 import PaperWrap from './PaperWrap';
 
 type Props = Product;
 
 const StyledCard = styled(PaperWrap)({
-  backgroundColor: 'rgba(255, 255, 255, 0.8)',
+  backgroundColor: 'rgba(255, 255, 255, 1)',
+  // border: '1px solid #0DB9CB',
   border: 'none',
   position: 'relative',
   borderRadius: 33,
+  padding: '1.5em',
   '&:after': {
     content: '" "',
     borderRadius: 33,
     position: 'absolute',
-    border: '1px dashed #0DB9CB',
+    border: '1px dashed #00A2D6',
     zIndex: -1,
     width: '100%',
     height: '100%',
@@ -28,7 +31,7 @@ const StyledCard = styled(PaperWrap)({
     opacity: 0.3,
     borderRadius: 33,
     position: 'absolute',
-    border: '1px dashed #0DB9CB',
+    border: '1px dashed #00A2D6',
     zIndex: -1,
     width: '100%',
     height: '100%',
@@ -37,46 +40,44 @@ const StyledCard = styled(PaperWrap)({
   },
 });
 
-const ImageContainer = styled(Box)(({ theme }) => ({
+const ImageContainer = styled(Box)(() => ({
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
-  backgroundColor: theme.palette.secondary.main,
+  backgroundColor: '#00A2D6',
   borderRadius: 16,
   width: 80,
   height: 80,
 }));
 
-const ProductTitle = styled(Typography)(({ theme } ) => ({
+const ProductTitle = styled(Typography)(() => ({
   fontFamily: 'Roboto',
-  color: theme.palette.secondary.main,
+  color: '#00A2D6',
   fontWeight: 700,
-  fontSize: 24
+  fontSize: 20
 }));
 
 const StyledButton = styled(Button)({
-  padding: '10px 40px',
+  padding: '5px 40px',
   borderRadius: 100,
 });
 
 const ProductCard: FC<Props> = ({ description, logo, title, url }) => {
   return (
     <StyledCard>
-      <Stack spacing={2}>
+      <Stack spacing={1}>
         <ImageContainer>
           <img src={logo} alt={`${title} logo`} />
         </ImageContainer>
         <ProductTitle>
           {title}
         </ProductTitle>
-        <Typography variant='body3'>
+        <Typography variant='body3' sx={{minHeight: '75px'}}>
           {description}
         </Typography>
-        <Box sx={{ pt: 2 }}>
-          <StyledButton variant='contained' color='secondary' href={url}>
-            Learn More
-          </StyledButton>
-        </Box>
+        <StyledButton variant='contained' color='secondary' href={url} sx={{backgroundColor: '#00A2D6'}}>
+          Explore
+        </StyledButton>
       </Stack>
     </StyledCard>
   );

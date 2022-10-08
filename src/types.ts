@@ -5,6 +5,10 @@ export type Product = {
   url: string;
 }
 
+export type Category = {
+  title: string;
+}
+
 export type Endpoint = {
   url: string;
   host: string;
