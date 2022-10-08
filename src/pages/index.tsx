@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Container, Grid } from '@mui/material';
+import { Container } from '@mui/material';
 import BasicTabs from '../components/BasicTabs';
 
 const Home: FC = () => {
