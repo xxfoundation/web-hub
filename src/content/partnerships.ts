@@ -1,14 +1,14 @@
 import type { Product } from '../types';
 
-import msgerLogo from '../assets/images/logos/logo_white.svg';
+import governance from '../assets/images/icons/governance.svg';
 
 const partnerships: Product[] = [
   {
-    logo: msgerLogo,
+    logo: governance,
     title: 'Governance',
     description:
-      '< missing >',
-    url: 'https://governance.xx.network',
+      'Find all the information about democracy on xx network blockchain here, from referenda to treasury tips, passing by council motions and tech committee updates on chain. Keep posted and do not miss any voting details or upcoming events.',
+    url: 'https://xx.polkassembly.io',
   }
 ];
 

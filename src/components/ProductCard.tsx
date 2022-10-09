@@ -3,6 +3,7 @@ import type { Product } from '../types'
 
 import React, { FC } from 'react';
 import { styled, Box, Typography, Stack, Button } from '@mui/material';
+import LaunchIcon from '@mui/icons-material/Launch';
 
 import PaperWrap from './PaperWrap';
 
@@ -46,8 +47,9 @@ const ImageContainer = styled(Box)(() => ({
   justifyContent: 'center',
   backgroundColor: '#00A2D6',
   borderRadius: 16,
-  width: 80,
-  height: 80,
+  maxWidth: 60,
+  maxHeight: 60,
+  padding: '0.5em'
 }));
 
 const ProductTitle = styled(Typography)(() => ({
@@ -57,27 +59,32 @@ const ProductTitle = styled(Typography)(() => ({
   fontSize: 20
 }));
 
-const StyledButton = styled(Button)({
-  padding: '5px 40px',
-  borderRadius: 100,
-});
+// const StyledButton = styled(Button)({
+//   padding: '5px 40px',
+//   borderRadius: 100,
+// });
 
 const ProductCard: FC<Props> = ({ description, logo, title, url }) => {
   return (
     <StyledCard>
-      <Stack spacing={1}>
-        <ImageContainer>
-          <img src={logo} alt={`${title} logo`} />
-        </ImageContainer>
+      <Stack spacing={2 }>
+        <Stack direction='row' sx={{justifyContent: 'space-between'}}>
+          <ImageContainer>
+            <img src={logo} alt={`${title} logo`} />
+          </ImageContainer>
+          <Button variant='text' href={url} sx={{ borderRadius: '5px', p: '0.25em', minWidth: '2em', maxHeight: '2em'}}>
+            <LaunchIcon />
+          </Button>
+        </Stack>
         <ProductTitle>
           {title}
         </ProductTitle>
         <Typography variant='body3' sx={{minHeight: '75px'}}>
           {description}
         </Typography>
-        <StyledButton variant='contained' color='secondary' href={url} sx={{backgroundColor: '#00A2D6'}}>
+        {/* <StyledButton variant='contained' href={url} sx={{ maxWidth: '9em', alignSelf: 'start' }}>
           Explore
-        </StyledButton>
+        </StyledButton> */}
       </Stack>
     </StyledCard>
   );
