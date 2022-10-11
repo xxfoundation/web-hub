@@ -2,7 +2,7 @@
 import type { Product } from '../types'
 
 import React, { FC } from 'react';
-import { styled, Box, Typography, Stack, Button, Alert } from '@mui/material';
+import { styled, Box, Typography, Stack, Button } from '@mui/material';
 import LaunchIcon from '@mui/icons-material/Launch';
 
 import PaperWrap from './PaperWrap';
@@ -50,7 +50,7 @@ const LogoContainer = styled(Box)(() => ({
   marginRight: '0.5em'
 }));
 
-const ProductCard: FC<Props> = ({ company, description, logo, tag, title, url }) => {
+const ProductCard: FC<Props> = ({ company, description, logo, tag, url }) => {
   return (
     <StyledCard>
       <Stack spacing={2 }>

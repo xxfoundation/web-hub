@@ -6,7 +6,6 @@ import { styled, Box, Typography, Stack, Button } from '@mui/material';
 import LaunchIcon from '@mui/icons-material/Launch';
 
 import PaperWrap from './PaperWrap';
-import foundation from '../assets/images/logos/xx-foundation-logo-color.svg';
 import Tag from './Tag';
 
 type Props = Product;
@@ -59,15 +58,14 @@ const LogoContainer = styled(Box)(() => ({
   alignSelf: 'end',
   maxWidth: 85,
   maxHeight: 85,
-  marginRight: '0.5em',
+  marginRight: '0.5em'
 }));
 
 const ProductTitle = styled(Typography)(() => ({
   fontFamily: 'Roboto',
   color: '#00A2D6',
   fontWeight: 500,
-  fontSize: 20,
-  // alignSelf: 'initial'
+  fontSize: 20
 }));
 
 const InternalCard: FC<Props> = ({ company, description, icon, logo, tag, title, url }) => {
@@ -79,7 +77,6 @@ const InternalCard: FC<Props> = ({ company, description, icon, logo, tag, title,
             <ImageContainer>
               <img src={icon} alt={`${title} icon`} />
             </ImageContainer>
-            
           </Stack>
           <Stack direction='column' justifyContent={'space-between'}>
             <Button variant='text' href={url} sx={{ borderRadius: '5px', p: '0.25em', minWidth: '2em', maxHeight: '2em', alignSelf: 'end'}}>
