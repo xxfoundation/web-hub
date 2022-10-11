@@ -1,8 +1,12 @@
 export type Product = {
-  logo: string;
   title: string;
   description: string;
   url: string;
+  tag?: string;
+  icon?: string;
+  logo?: string
+  company?: string;
+  companyUrl?: string;
 }
 
 export type Category = {

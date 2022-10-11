@@ -2,13 +2,19 @@ import type { Category } from '../types';
 
 const categories: Category[] = [
   {
-    title: 'Apps',
+    title: 'Tools',
   },
   {
     title: 'Wallets',
   },
   {
-    title: 'Partnerships',
+    title: 'dApps',
+  },
+  {
+    title: 'Partners',
+  },
+  {
+    title: 'Exchanges',
   }
 ];
 

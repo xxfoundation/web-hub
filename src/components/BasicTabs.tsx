@@ -1,12 +1,15 @@
 import * as React from 'react';
 import { Box, Typography, Tab, Tabs, Grid, Stack } from '@mui/material';
 
-import ProductCard from '../components/ProductCard';
+import InternalCard from './InternalCard';
 import categories from '../content/categories';
-import apps from '../content/apps';
+import tools from '../content/tools';
 import wallets from '../content/wallets';
-import partnerships from '../content/partnerships';
+import dapps from '../content/dapps';
+import partners from '../content/partners';
+import exchanges from '../content/exchanges';
 import { Product } from '../types';
+import ExternalCard from './ExternalCard';
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -55,7 +58,7 @@ export default function BasicTabs() {
   };
 
   return (
-    <Box sx={{ mx: '1.5em' }} >
+    <Box sx={{ mx: '1.25em', marginRight: '3.25em' }} >
       <Box>
         <Tabs value={value} onChange={handleChange} aria-label='basic tabs'>
           {TabTitles()}
@@ -63,9 +66,9 @@ export default function BasicTabs() {
       </Box>
       <TabPanel value={value} index={0}>
         <Grid spacing={5} container>  
-          {apps.map((app: Product) => (
+          {tools.map((app: Product) => (
             <Grid md={6} sm={6} xs={12} item>
-              <ProductCard {...app} />
+              <InternalCard {...app} />
             </Grid>
           ))}
         </Grid>
@@ -74,16 +77,34 @@ export default function BasicTabs() {
         <Grid spacing={5} container>  
           {wallets.map((wallet: Product) => (
             <Grid md={6} sm={6} xs={12} item>
-              <ProductCard {...wallet} />
+              <InternalCard {...wallet} />
             </Grid>
           ))}
         </Grid>
       </TabPanel>
       <TabPanel value={value} index={2}>
         <Grid spacing={5} container>  
-          {partnerships.map((partnership: Product) => (
+          {dapps.map((dapp: Product) => (
             <Grid md={6} sm={6} xs={12} item>
-              <ProductCard {...partnership} />
+              <ExternalCard {...dapp} />
+            </Grid>
+          ))}
+        </Grid>
+      </TabPanel>
+      <TabPanel value={value} index={3}>
+        <Grid spacing={5} container>  
+          {partners.map((partner: Product) => (
+            <Grid md={6} sm={6} xs={12} item>
+              <ExternalCard {...partner} />
+            </Grid>
+          ))}
+        </Grid>
+      </TabPanel>
+      <TabPanel value={value} index={4}>
+        <Grid spacing={5} container>  
+          {exchanges.map((exchange: Product) => (
+            <Grid md={6} sm={6} xs={12} item>
+              <ExternalCard {...exchange} />
             </Grid>
           ))}
         </Grid>

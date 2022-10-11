@@ -91,17 +91,20 @@ const DocsMenu = () => {
             'aria-labelledby': 'docs-button'
           }}
         >
-          <MenuLink href='#' onClick={close}>
-            Blockchain API
+          <MenuLink href='https://wiki.xx.network' rel='noopener' target='_blank' onClick={close}>
+            Wiki
           </MenuLink>
-          <MenuLink href='#' onClick={close}>
+          <MenuLink href='https://xxdk-dev.xx.network/' rel='noopener' target='_blank' onClick={close}>
             xxDK Dev
           </MenuLink>
-          <MenuLink href='https://dashboard-api.xx.network/v1/docs/' onClick={close}>
+          <MenuLink href='https://dashboard-api.xx.network/v1/docs/' rel='noopener' target='_blank' onClick={close}>
             cmix Dashboard API
           </MenuLink>
-          <MenuLink href='https://forum.xx.network/' onClick={close}>
+          <MenuLink href='https://blockchainapi.xx.network/' rel='noopener' target='_blank' onClick={close}>
             Blockchain API
+          </MenuLink>
+          <MenuLink href='https://github.com/xx-labs/exchange-integration#readme' rel='noopener' target='_blank' onClick={close}>
+            Exchange Integration
           </MenuLink>
         </Menu>
       )}
