@@ -68,7 +68,7 @@ const ProductTitle = styled(Typography)(() => ({
   fontSize: 20
 }));
 
-const InternalCard: FC<Props> = ({ company, description, icon, logo, tag, title, url }) => {
+const InternalCard: FC<Props> = ({ blank, company, description, icon, logo, tag, title, url }) => {
   return (
     <StyledCard>
       <Stack spacing={2}>
@@ -79,7 +79,7 @@ const InternalCard: FC<Props> = ({ company, description, icon, logo, tag, title,
             </ImageContainer>
           </Stack>
           <Stack direction='column' justifyContent={'space-between'}>
-            <Button variant='text' href={url} sx={{ borderRadius: '5px', p: '0.25em', minWidth: '2em', maxHeight: '2em', alignSelf: 'end'}}>
+            <Button variant='text' href={url} sx={{ borderRadius: '5px', p: '0.25em', minWidth: '2em', maxHeight: '2em', alignSelf: 'end'}} target={blank ? '_blank' : ''}>
               <LaunchIcon />
             </Button>
           </Stack>
@@ -88,7 +88,7 @@ const InternalCard: FC<Props> = ({ company, description, icon, logo, tag, title,
           <ProductTitle>{title}</ProductTitle>
           <Tag filled>{tag}</Tag>
         </Stack>
-        <Typography variant='body3' sx={{minHeight: {xs: '150px', ml: '100px', lg: '100px'} }}>
+        <Typography variant='body3' sx={{minHeight: {xs: '150px', ml: '100px', lg: '100px'}}}>
           {description}
         </Typography>
         <LogoContainer>

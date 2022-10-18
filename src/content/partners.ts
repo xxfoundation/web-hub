@@ -6,7 +6,7 @@ import polkassembly from '../assets/images/logos/polkassembly.svg';
 const partners: Product[] = [
   {
     description:
-      'Find all the information about democracy on xx network blockchain here, from referenda to treasury tips, passing by council motions and tech committee updates on chain. Keep posted and do not miss any voting details or upcoming events.',
+      'Participate in Democracy on the xx network!\nPolkassembly is a unified platform to discuss and vote on Governance proposals, motions and referandas.',
     url: 'https://xx.polkassembly.io',
     tag: 'Governance',
     logo: polkassembly,
@@ -15,8 +15,8 @@ const partners: Product[] = [
   },
   {
     description:
-      'Navigate through the block explorer to learn more about xx network blockchain and to inspect on-chain data, such as transfers, account balances, validators performance and staking activity.',
-    url: 'https://dev.xx-network.polkastats.io/',
+      'An alternative to the official xx network block explorer.\nPolkastats allows you to connect to the polkadot-js extension to easily select, compare and nominate validators.',
+    url: 'https://xx.polkastats.io/',
     tag: 'Explorer',
     logo: polkastats,
     company: 'Polkastats',

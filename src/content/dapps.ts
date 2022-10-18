@@ -6,7 +6,7 @@ const dapps: Product[] = [
   {
     title: 'xx messenger',
     description:
-      'It is the first and only messenger that truly protects communication between sender and receiver. All messages are not only end-to-end encrypted, but no metadata is ever – or can be – collected.',
+      'The first and only messenger that truly protects communication between sender and receiver. All messages are not only end-to-end encrypted, but no metadata is ever – or can be – collected.',
     url: 'https://elixxir.io/',
     tag: 'Private Messenger',
     company: 'Elixxir',

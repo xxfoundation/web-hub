@@ -2,6 +2,7 @@ export type Product = {
   title?: string;
   description: string;
   url: string;
+  blank?: boolean;
   tag?: string;
   icon?: string;
   logo?: string

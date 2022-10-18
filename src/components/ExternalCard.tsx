@@ -59,12 +59,15 @@ const ProductCard: FC<Props> = ({ company, description, logo, tag, url }) => {
             <img src={logo} alt={`${company} logo`}/>
           </LogoContainer>
           <Stack direction='column' justifyContent={'space-between'}>
-            <Button variant='text' href={url} sx={{ borderRadius: '5px', p: '0.25em', minWidth: '2em', maxHeight: '2em', alignSelf: 'end'}}>
+            <Button variant='text' href={url} sx={{ borderRadius: '5px', p: '0.25em', minWidth: '2em', maxHeight: '2em', alignSelf: 'end'}} target='_blank'>
               <LaunchIcon />
             </Button>
           </Stack>
         </Stack>
-        <Tag filled sx={{width: 'max-content'}}>{tag}</Tag>
+        <Stack direction='row' sx={{justifyContent: 'space-between', alignItems: 'end', pr: '0.5em'}}>
+          <Typography>{''}</Typography>
+          <Tag filled>{tag}</Tag>
+        </Stack>
         <Typography variant='body3' sx={{minHeight: {xs: '150px', ml: '100px', lg: '100px'} }}>
           {description}
         </Typography>

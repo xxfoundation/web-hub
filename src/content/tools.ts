@@ -10,7 +10,7 @@ const tools: Product[] = [
   {
     title: 'Sleeve',
     description:
-    'Sleeve is the novel Wallet generation algorithm used by xx network. With Sleeve, a backup quantum secure Wallet is embedded into a standard non quantum secure Wallet. Therefore, this app will allow you to create a quantum-ready wallet.',
+    'Use this app to create your first quantum-ready wallet!\nSleeve is the novel Wallet generation algorithm used by xx network. With Sleeve, a backup quantum secure Wallet is embedded into a standard non quantum secure Wallet.',
     url: 'https://sleeve.xx.network',
     tag: 'Wallet Generation',
     icon: sleeve,
@@ -21,7 +21,7 @@ const tools: Product[] = [
   {
     title: 'Simple Staking',
     description:
-    'Be part of the network and contribute for its security while being rewarded to do so. This app will help you stake (or unstake) your xx coins and redeem your rewards with only a handful of clicks while ensuring you retain control and custody of your coins at all times.',
+    'Stake your xx coins!\nHelp secure the network and earn rewards. This app helps you stake (or unstake) your xx coins and redeem your rewards with only a handful of clicks while ensuring you retain custody of your coins.',
     url: 'https://staking.xx.network',
     tag: 'Staking',
     icon: staking,
@@ -43,8 +43,9 @@ const tools: Product[] = [
   {
     title: 'Cmix Dashboard',
     description:
-    'Visit the cMix dashboard to see nodes processing messages in real time while checking statistics on their performance, uptime, and network throughput.',
+    'Visit the cMix dashboard to see nodes processing messages in real time and check statistics on their performance, uptime, and overall network throughput.',
     url: 'https://dashboard.xx.network',
+    blank: true,
     tag: 'Dashboard',
     icon: cmix,
     logo: foundation,
