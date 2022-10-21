@@ -1,7 +1,7 @@
 import type { Product } from '../types';
 
 import xxmessenger from '../assets/images/logos/xx_messenger_logotype_color.svg';
-import speakeasy from '../assets/images/logos/alpha_speakeasy_logotype_black.png';
+import speakeasy from '../assets/images/logos/codename_speakeasy_logotype_black.png';
 
 const dapps: Product[] = [
   {
@@ -15,7 +15,7 @@ const dapps: Product[] = [
     logo: xxmessenger
   },
   {
-    title: 'Speakeasy',
+    title: 'Codename Speakeasy',
     description:
       'True Freedom to express yourself, your thoughts, your beliefs.\nSpeak easily to a group of friends or a global community. Talk about what you want. Surveillance free. Censorship proof. Your speakeasy is yours.',
     url: 'http://alpha.speakeasy.tech/',
