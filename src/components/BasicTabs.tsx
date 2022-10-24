@@ -60,7 +60,14 @@ export default function BasicTabs() {
   return (
     <Box sx={{ mx: '1.25em', marginRight: '3.25em' }} >
       <Box>
-        <Tabs value={value} onChange={handleChange} aria-label='basic tabs'>
+        <Tabs
+          value={value}
+          onChange={handleChange}
+          aria-label='basic tabs'
+          variant='scrollable'
+          scrollButtons
+          allowScrollButtonsMobile
+        >
           {TabTitles()}
         </Tabs>
       </Box>
