@@ -21,7 +21,7 @@ const partners: Product[] = [
     logo: polkastats,
     company: 'Polkastats',
     companyUrl: 'https://polkastats.io'
-  },
+  }
 ];
 
 export default partners;

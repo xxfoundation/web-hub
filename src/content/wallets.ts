@@ -1,19 +1,16 @@
 import type { Product } from '../types';
 
-import wallet from '../assets/images/icons/wallet.svg';
-import foundation from '../assets/images/logos/xx-foundation-logo-color.svg';
+import novaWallet from '../assets/images/logos/novawallet.png';
 
 const wallets: Product[] = [
   {
-    title: 'Web Wallet',
     description:
-    'Use the official web-based wallet app to create quantum-ready wallets, stake your xx coins, and vote on network issues. This is the most complex and complete tool used to interact with xx network blockchain.',
-    url: 'https://wallet.xx.network',
-    tag: 'Wallet',
-    icon: wallet,
-    logo: foundation,
-    company: 'xx Foundation',
-    companyUrl: 'https://xxfoundation.org'
+      'Nova Wallet is a non-custodial mobile wallet, where users have full control of their assets and their own private keys. It allows users to manage all substrate-based coins/tokens, enjoy convenient staking experiences, and interact with many blockchains without ever giving up your private keys or the passcode to your funds.',
+    url: 'https://novawallet.io/',
+    tag: 'Mobile Wallet',
+    logo: novaWallet,
+    company: 'Nova Wallet',
+    companyUrl: 'https://novawallet.io/'
   }
 ];
 

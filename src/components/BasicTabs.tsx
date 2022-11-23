@@ -84,7 +84,7 @@ export default function BasicTabs() {
         <Grid spacing={5} container>  
           {wallets.map((wallet: Product) => (
             <Grid md={6} sm={6} xs={12} item>
-              <InternalCard {...wallet} />
+              <ExternalCard {...wallet} />
             </Grid>
           ))}
         </Grid>
