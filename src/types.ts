@@ -3,7 +3,7 @@ export type Product = {
   description: string;
   url: string;
   blank?: boolean;
-  tag?: string;
+  tags?: string[];
   icon?: string;
   logo?: string
   company?: string;

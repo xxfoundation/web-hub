@@ -50,7 +50,7 @@ const LogoContainer = styled(Box)(() => ({
   marginRight: '0.5em'
 }));
 
-const ProductCard: FC<Props> = ({ company, description, logo, tag, url }) => {
+const ProductCard: FC<Props> = ({ company, description, logo, tags, url }) => {
   return (
     <StyledCard>
       <Stack spacing={2 }>
@@ -66,7 +66,9 @@ const ProductCard: FC<Props> = ({ company, description, logo, tag, url }) => {
         </Stack>
         <Stack direction='row' sx={{justifyContent: 'space-between', alignItems: 'end', pr: '0.5em'}}>
           <Typography>{''}</Typography>
-          <Tag filled>{tag}</Tag>
+          <Stack direction='row' spacing={1}>
+            {tags?.map((tag) => (<Tag filled>{tag}</Tag>))}
+          </Stack>
         </Stack>
         <Typography variant='body3' sx={{minHeight: {xs: '150px', ml: '100px', lg: '100px'} }}>
           {description}

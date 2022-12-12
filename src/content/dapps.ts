@@ -9,7 +9,7 @@ const dapps: Product[] = [
     description:
       'The first and only messenger that truly protects communication between sender and receiver. All messages are not only end-to-end encrypted, but no metadata is ever – or can be – collected.',
     url: 'https://elixxir.io/',
-    tag: 'Private Messenger',
+    tags: ['Private Messenger'],
     company: 'Elixxir',
     companyUrl: 'https://elixxir.io',
     logo: xxmessenger
@@ -19,7 +19,7 @@ const dapps: Product[] = [
     description:
       'True Freedom to express yourself, your thoughts, your beliefs.\nSpeak easily to a group of friends or a global community. Talk about what you want. Surveillance free. Censorship proof. Your speakeasy is yours.',
     url: 'http://alpha.speakeasy.tech/',
-    tag: 'Private Social Network',
+    tags: ['Private Social Network'],
     company: 'Elixxir',
     companyUrl: 'https://elixxir.io',
     logo: speakeasy

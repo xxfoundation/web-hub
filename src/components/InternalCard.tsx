@@ -68,7 +68,7 @@ const ProductTitle = styled(Typography)(() => ({
   fontSize: 20
 }));
 
-const InternalCard: FC<Props> = ({ blank, company, description, icon, logo, tag, title, url }) => {
+const InternalCard: FC<Props> = ({ blank, company, description, icon, logo, tags, title, url }) => {
   return (
     <StyledCard>
       <Stack spacing={2}>
@@ -86,7 +86,9 @@ const InternalCard: FC<Props> = ({ blank, company, description, icon, logo, tag,
         </Stack>
         <Stack direction='row' sx={{justifyContent: 'space-between', alignItems: 'end', pr: '0.5em'}}>
           <ProductTitle>{title}</ProductTitle>
-          <Tag filled>{tag}</Tag>
+          <Stack direction='row' spacing={1}>
+            {tags?.map((tag) => (<Tag filled>{tag}</Tag>))}
+          </Stack>
         </Stack>
         <Typography variant='body3' sx={{minHeight: {xs: '150px', ml: '100px', lg: '100px'}}}>
           {description}
