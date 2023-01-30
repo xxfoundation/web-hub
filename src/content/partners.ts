@@ -2,6 +2,9 @@ import type { Product } from '../types';
 
 import polkastats from '../assets/images/logos/polkastats.png';
 import polkassembly from '../assets/images/logos/polkassembly.svg';
+import dwellir from '../assets/images/logos/dwellir.svg';
+import onfinality from '../assets/images/logos/onfinality.png';
+import crust from '../assets/images/logos/crust.png';
 
 const partners: Product[] = [
   {
@@ -21,7 +24,34 @@ const partners: Product[] = [
     logo: polkastats,
     company: 'Polkastats',
     companyUrl: 'https://polkastats.io'
-  }
+  },
+  {
+    description:
+      'Specialized in providing infrastructure for the decentralized web. The pioneer Swedish Proof of Stake infrastructure provider.',
+    url: 'https://dwellir.com/',
+    tags: ['Infrastructure'],
+    logo: dwellir,
+    company: 'Dwellir',
+    companyUrl: 'https://dwellir.io'
+  },
+  {
+    description:
+      'Empowering Web3 developers with easy-to-use, reliable and scalable blockchain infrastructure.',
+    url: 'https://onfinality.io/',
+    tags: ['Infrastructure', 'API Development'],
+    logo: onfinality,
+    company: 'onFinality',
+    companyUrl: 'https://onfinality.io'
+  },
+  {
+    description:
+      'A decentralized cloud storage provider which was designed to realize our three core values: decentralization, privacy, and assurance.',
+    url: 'https://crust.network/',
+    tags: ['Storage'],
+    logo: crust,
+    company: 'Crust',
+    companyUrl: 'https://crust.network'
+  },
 ];
 
 export default partners;

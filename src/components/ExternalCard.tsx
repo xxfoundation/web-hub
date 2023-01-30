@@ -53,7 +53,7 @@ const LogoContainer = styled(Box)(() => ({
 const ProductCard: FC<Props> = ({ company, description, logo, tags, url }) => {
   return (
     <StyledCard>
-      <Stack spacing={2 }>
+      <Stack spacing={2}>
         <Stack direction='row' sx={{justifyContent: 'space-between', minHeight:60, alignItems: 'center'}}>
           <LogoContainer>
             <img src={logo} alt={`${company} logo`}/>
