@@ -9,6 +9,7 @@ import PaperWrap from './PaperWrap';
 import Tag from './Tag';
 
 type Props = Product;
+const color = '#00A2D6'
 
 const StyledCard = styled(PaperWrap)({
   backgroundColor: 'rgba(255, 255, 255, 1)',
@@ -20,7 +21,7 @@ const StyledCard = styled(PaperWrap)({
     content: '" "',
     borderRadius: 33,
     position: 'absolute',
-    border: '1px dashed #00A2D6',
+    border: `1px dashed ${color}`,
     zIndex: -1,
     width: '100%',
     height: '100%',
@@ -32,7 +33,7 @@ const StyledCard = styled(PaperWrap)({
     opacity: 0.3,
     borderRadius: 33,
     position: 'absolute',
-    border: '1px dashed #00A2D6',
+    border: `1px dashed ${color}`,
     zIndex: -1,
     width: '100%',
     height: '100%',
@@ -45,7 +46,7 @@ const ImageContainer = styled(Box)(() => ({
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
-  backgroundColor: '#00A2D6',
+  backgroundColor: color,
   borderRadius: 16,
   width: 50,
   height: 50,
@@ -63,7 +64,7 @@ const LogoContainer = styled(Box)(() => ({
 
 const ProductTitle = styled(Typography)(() => ({
   fontFamily: 'Roboto',
-  color: '#00A2D6',
+  color: color,
   fontWeight: 500,
   fontSize: 20
 }));
