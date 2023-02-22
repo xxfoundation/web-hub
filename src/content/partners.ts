@@ -32,7 +32,7 @@ const partners: Product[] = [
     description:
     'Empowering Web3 developers with easy-to-use, reliable and scalable blockchain infrastructure. OnFinality is a blockchain infrastructure provider that offers managed node services, tooling, and analytics for multiple blockchain networks.',
     url: 'https://onfinality.io/',
-    tags: ['Infrastructure', 'API Development'],
+    tags: ['Infrastructure', 'API Dev'],
     logo: onfinality,
     company: 'onFinality',
     companyUrl: 'https://onfinality.io'
@@ -41,7 +41,7 @@ const partners: Product[] = [
     description:
     'The most dev-friendly way to develop and deploy custom GraphQL APIs and ETLs for advanced blockchain use cases. Squid SDK is a complete indexing toolkit and hosted service for the next generation of dApps, on-chain analytics, and world-changing blockchain tech.',
     url: 'https://subsquid.io/',
-    tags: ['API Development'],
+    tags: ['API Dev'],
     logo: subsquid,
     company: 'Subsquid',
     companyUrl: 'https://subsquid.io'

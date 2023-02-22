@@ -74,7 +74,7 @@ export default function BasicTabs() {
       <TabPanel value={value} index={0}>
         <Grid spacing={5} container>  
           {tools.map((app: Product) => (
-            <Grid md={6} sm={6} xs={12} item>
+            <Grid md={6} sm={12} xs={12} item>
               <InternalCard {...app} />
             </Grid>
           ))}
@@ -83,7 +83,7 @@ export default function BasicTabs() {
       <TabPanel value={value} index={1}>
         <Grid spacing={5} container>  
           {wallets.map((wallet: Product) => (
-            <Grid md={6} sm={6} xs={12} item>
+            <Grid md={6} sm={12} xs={12} item>
               <ExternalCard {...wallet} />
             </Grid>
           ))}
@@ -92,7 +92,7 @@ export default function BasicTabs() {
       <TabPanel value={value} index={2}>
         <Grid spacing={5} container>  
           {dapps.map((dapp: Product) => (
-            <Grid md={6} sm={6} xs={12} item>
+            <Grid md={6} sm={12} xs={12} item>
               <ExternalCard {...dapp} />
             </Grid>
           ))}
@@ -101,7 +101,7 @@ export default function BasicTabs() {
       <TabPanel value={value} index={3}>
         <Grid spacing={5} container>  
           {partners.map((partner: Product) => (
-            <Grid md={6} sm={6} xs={12} item>
+            <Grid md={6} sm={12} xs={12} item>
               <ExternalCard {...partner} />
             </Grid>
           ))}
@@ -110,7 +110,7 @@ export default function BasicTabs() {
       <TabPanel value={value} index={4}>
         <Grid spacing={5} container>  
           {exchanges.map((exchange: Product) => (
-            <Grid md={6} sm={6} xs={12} item>
+            <Grid md={6} sm={12} xs={12} item>
               <ExternalCard {...exchange} />
             </Grid>
           ))}

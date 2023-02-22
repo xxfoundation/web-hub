@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 function App() {
   return(
     <Router>
-      <Stack sx={{ minHeight: '100vh' }}>
+      <Stack sx={{ minHeight: '100vh', minWidth: '370px' }}>
         <Header />
         <Box flexGrow={1}>
           <Routes>

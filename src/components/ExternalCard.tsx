@@ -3,10 +3,12 @@ import type { Product } from '../types'
 
 import React, { FC } from 'react';
 import { styled, Box, Typography, Stack, Button } from '@mui/material';
+import useMediaQuery from '@mui/material/useMediaQuery';
 import LaunchIcon from '@mui/icons-material/Launch';
 
 import PaperWrap from './PaperWrap';
 import Tag from './Tag';
+import { theme } from '../theme';
 
 type Props = Product;
 
@@ -51,14 +53,16 @@ const LogoContainer = styled(Box)(() => ({
 }));
 
 const ProductCard: FC<Props> = ({ company, description, logo, tags, url }) => {
+  const mobileView = useMediaQuery(theme.breakpoints.up('sm'));
   return (
     <StyledCard>
       <Stack spacing={2}>
+        { mobileView ?
         <Stack direction='row' sx={{justifyContent: 'space-between', minHeight:60, alignItems: 'center'}}>
           <LogoContainer>
             <img src={logo} alt={`${company} logo`}/>
           </LogoContainer>
-          <Stack spacing={1} direction='column' justifyContent={'space-between'} paddingBottom={'0.5em'}>
+          <Stack spacing={1} direction='column' sx={{ justifyContent: 'space-between', paddingBottom: '0.5em'}}>
             <Button variant='text' href={url} sx={{ borderRadius: '5px', minWidth: '2em', maxHeight: '2em', alignSelf: 'end'}} target='_blank'>
               <LaunchIcon />
             </Button>
@@ -67,6 +71,21 @@ const ProductCard: FC<Props> = ({ company, description, logo, tags, url }) => {
             </Stack>
           </Stack>
         </Stack>
+        : 
+        <Stack direction='column'>
+          <Stack direction='row' sx={{justifyContent: 'space-between', minHeight:60, alignItems: 'center'}}>
+            <LogoContainer>
+              <img src={logo} alt={`${company} logo`}/>
+            </LogoContainer>
+            <Button variant='text' href={url} sx={{ borderRadius: '5px', minWidth: '2em', maxHeight: '2em', margin: 'auto 0', pl: 0}} target='_blank'>
+              <LaunchIcon />
+            </Button>
+          </Stack>
+          <Stack direction='row' spacing={1} sx={{p: 0.5}}>
+            {tags?.map((tag) => (<Tag filled>{tag}</Tag>))}
+          </Stack>
+        </Stack>
+        }
         <Typography variant='body3' sx={{minHeight: {xs: '150px', ml: '100px', lg: '100px'} }}>
           {description}
         </Typography>
