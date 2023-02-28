@@ -1,6 +1,7 @@
 import type { Product } from '../types';
 
 import mexc from '../assets/images/logos/mexc.png';
+import coinw from '../assets/images/logos/coinw.svg';
 
 const exchanges: Product[] = [
   {
@@ -11,6 +12,15 @@ const exchanges: Product[] = [
     logo: mexc,
     company: 'MEXC Global',
     companyUrl: 'https://www.mexc.com/'
+  },
+  {
+    description:
+      'Launched in 2017, CoinW is an exchange based in Hong Kong known for its strong security features, such as two-factor authentication and cold storage of user funds. Starting from July 13th, 2022, CoinW decided to completely eliminate both maker and taker fees on all spot pairs. Thus, all spot trades can be executed without any fees at all.',
+    url: 'https://www.coinw.com/frontSpot/spottrade?symbol=1297',
+    tags: ['CEX'],
+    logo: coinw,
+    company: 'CoinW',
+    companyUrl: 'https://www.coinw.com/'
   }
 ];
 
