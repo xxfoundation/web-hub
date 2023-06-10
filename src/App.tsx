@@ -13,7 +13,7 @@ function App() {
         <Header />
         <Box flexGrow={1}>
           <Routes>
-            <Route index element={<Home />} />
+            <Route path='*' element={<Home />} />
           </Routes>
         </Box>
         <Footer />

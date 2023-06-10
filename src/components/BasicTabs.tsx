@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Box, Typography, Tab, Tabs, Grid, Stack } from '@mui/material';
-
+import { Link, useLocation } from 'react-router-dom';
 import InternalCard from './InternalCard';
 import categories from '../content/categories';
 import tools from '../content/tools';
@@ -46,12 +46,18 @@ function a11yProps(index: number) {
 
 const TabTitles = () => (
   categories.map((category, index) => (
-      <Tab label={<Typography variant='body4'>{category.title}</Typography>} {...a11yProps(index)} />
+      <Tab
+        label={<Typography variant='body4'>{category.title}</Typography>}
+        {...a11yProps(index)}
+        to={category.title.toLocaleLowerCase()} component={Link}
+      />
   ))
 )
 
 export default function BasicTabs() {
-  const [value, setValue] = React.useState(0);
+  const { pathname } = useLocation();
+  const initialValue = categories.findIndex(category => category.title.toLocaleLowerCase() === pathname.slice(1));
+  const [value, setValue] = React.useState(initialValue === -1 ? 0 : initialValue);
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
