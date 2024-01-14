@@ -3,6 +3,7 @@ import type { Product } from '../types';
 import xxmessenger from '../assets/images/logos/xx_messenger_logotype_color.svg';
 import speakeasy from '../assets/images/logos/codename_speakeasy_logotype_black.png';
 import proxxy from '../assets/images/logos/proxxy.png';
+import echoexx from '../assets/images/logos/echoexx.png'
 
 const dapps: Product[] = [
   {
@@ -34,6 +35,16 @@ const dapps: Product[] = [
     company: 'Elixxir',
     companyUrl: 'https://elixxir.io',
     logo: xxmessenger
+  },
+  {
+    title: 'echoexx.tech',
+    description:
+      'A multifaceted decentralized app combining secure wallet connections, private communication, and diverse features including chat, digital identity management, and advanced payment privacy, underpinned by the privacy-focused xx network.',
+    url: 'https://echoexx.tech/',
+    tags: ['Privacy', 'Web3'],
+    company: 'BitFashioned',
+    companyUrl: 'https://bitfashioned.com',
+    logo: echoexx
   }
 ];
 
