@@ -8,8 +8,18 @@ import onfinality from '../assets/images/logos/onfinality.png';
 import crust from '../assets/images/logos/crust.png';
 import zondax from '../assets/images/logos/zondax.png';
 import chainsafe from '../assets/images/logos/chainsafe.png';
+import worldcoin from '../assets/images/logos/worldcoin.png';
 
 const partners: Product[] = [
+  {
+    description:
+      'Worldcoin aims to create a global digital currency, emphasizing privacy with its "Orb" device for secure, anonymous biometric ID. Partnering with the xx Network, it seeks to enhance privacy protections, advancing its mission for financial inclusion and a decentralized economy.',
+    url: 'https://worldcoin.org/',
+    tags: ['R&D', 'Grants', 'Privacy'],
+    logo: worldcoin,
+    company: 'Wordcoin Foundation',
+    companyUrl: 'https://www.worldcoin.foundation/'
+  },
   {
     description:
       'Chainsafe is a blockchain research and development company that provides solutions for scalable, decentralized systems. Their services include node deployment, protocol development, and consulting. Chainsafe is highly regarded for their contributions to the blockchain community through open-source software and collaboration.',
