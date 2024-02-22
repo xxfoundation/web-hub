@@ -9,8 +9,18 @@ import crust from '../assets/images/logos/crust.png';
 import zondax from '../assets/images/logos/zondax.png';
 import chainsafe from '../assets/images/logos/chainsafe.png';
 import worldcoin from '../assets/images/logos/worldcoin.png';
+import carbon from '../assets/images/logos/carbon.png';
 
 const partners: Product[] = [
+  {
+    description:
+      'Carbon Mobile Browser is a Web 3.0 browser offering AdBlock, dVPN, a crypto wallet, and privacy features. It aims for a faster, secure, and private web experience with a multi-chain wallet and rewards for browsing, ensuring data protection without selling user data.',
+    url: 'https://carbon.website/',
+    tags: ['Web3', 'Browser', 'Privacy'],
+    logo: carbon,
+    company: 'Carbon Browser',
+    companyUrl: 'https://carbon.website/'
+  },
   {
     description:
       'Worldcoin aims to create a global digital currency, emphasizing privacy with its "Orb" device for secure, anonymous biometric ID. Partnering with the xx Network, it seeks to enhance privacy protections, advancing its mission for financial inclusion and a decentralized economy.',
