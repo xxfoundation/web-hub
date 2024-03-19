@@ -2,8 +2,18 @@ import type { Product } from '../types';
 
 import novaWallet from '../assets/images/logos/novawallet.png';
 import subWallet from '../assets/images/logos/subwallet.png';
+import talisman from '../assets/images/logos/talisman.svg';
 
 const wallets: Product[] = [
+  {
+    description:
+      'Talisman is a browser extension wallet that allows users to manage their assets and interact with the Polkadot ecosystem. It is designed to be secure, user-friendly, and fully decentralized. It is compatible with xx network wallets and other Substrate-based accounts.',
+    url: 'https://talisman.xyz/',
+    tags: ['Browser Extension'],
+    logo: talisman,
+    company: 'Talisman',
+    companyUrl: 'https://talisman.xyz/'
+  },
   {
     description:
       'Nova Wallet is a non-custodial mobile wallet, where users have full control of their assets and their own private keys. It allows users to manage all substrate-based coins/tokens, enjoy convenient staking experiences, and interact with many blockchains.',
