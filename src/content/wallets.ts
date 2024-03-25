@@ -7,7 +7,7 @@ import talisman from '../assets/images/logos/talisman.svg';
 const wallets: Product[] = [
   {
     description:
-      'Talisman is a browser extension wallet that allows users to manage their assets and interact with the Polkadot ecosystem. It is designed to be secure, user-friendly, and fully decentralized. It is compatible with xx network wallets and other Substrate-based accounts.',
+      'Talisman is a leading non-custodial browser extension wallet designed for Polkadot and Ethereum, with support over 180 networks. It\'s an ultra-secure wallet that simplifies web3 for beginners and unleashes advanced capabilities for experts. Being multi-chain by design, it enables seamless interaction with diverse blockchains.',
     url: 'https://talisman.xyz/',
     tags: ['Browser Extension'],
     logo: talisman,
