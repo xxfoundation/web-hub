@@ -69,7 +69,7 @@ const ProductTitle = styled(Typography)(() => ({
   fontSize: 20
 }));
 
-const InternalCard: FC<Props> = ({ blank, company, description, icon, logo, tags, title, url }) => {
+const InternalCard: FC<Props> = ({ blank, company, description, icon, logo, tags, title, urls }) => {
   return (
     <StyledCard>
       <Stack spacing={2}>
@@ -80,9 +80,9 @@ const InternalCard: FC<Props> = ({ blank, company, description, icon, logo, tags
             </ImageContainer>
           </Stack>
           <Stack direction='column' justifyContent={'space-between'}>
-            <Button variant='text' href={url} sx={{ borderRadius: '5px', p: '0.25em', minWidth: '2em', maxHeight: '2em', alignSelf: 'end'}} target={blank ? '_blank' : ''}>
+            {urls.map((url) => <Button variant='text' href={url} sx={{ borderRadius: '5px', p: '0.25em', minWidth: '2em', maxHeight: '2em', alignSelf: 'end'}} target={blank ? '_blank' : ''}>
               <LaunchIcon />
-            </Button>
+            </Button>)}
           </Stack>
         </Stack>
         <Stack direction='row' sx={{justifyContent: 'space-between', alignItems: 'end', pr: '0.5em'}}>

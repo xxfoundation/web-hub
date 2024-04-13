@@ -1,21 +1,21 @@
 export type Product = {
   title?: string;
   description: string;
-  url: string;
+  urls: string[];
   blank?: boolean;
   tags?: string[];
   icon?: string;
-  logo?: string
+  logo?: string;
   company?: string;
   companyUrl?: string;
-}
+};
 
 export type Category = {
   title: string;
-}
+};
 
 export type Endpoint = {
   url: string;
   host: string;
   description: string;
-}
+};

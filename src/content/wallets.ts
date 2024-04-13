@@ -8,7 +8,7 @@ const wallets: Product[] = [
   {
     description:
       'Talisman is a leading non-custodial browser extension wallet designed for Polkadot and Ethereum, with support over 180 networks. It\'s an ultra-secure wallet that simplifies web3 for beginners and unleashes advanced capabilities for experts. Being multi-chain by design, it enables seamless interaction with diverse blockchains.',
-    url: 'https://talisman.xyz/',
+    urls: ['https://talisman.xyz/'],
     tags: ['Browser Extension'],
     logo: talisman,
     company: 'Talisman',
@@ -17,7 +17,7 @@ const wallets: Product[] = [
   {
     description:
       'Nova Wallet is a non-custodial mobile wallet, where users have full control of their assets and their own private keys. It allows users to manage all substrate-based coins/tokens, enjoy convenient staking experiences, and interact with many blockchains.',
-    url: 'https://novawallet.io/',
+    urls: ['https://novawallet.io/'],
     tags: ['Mobile'],
     logo: novaWallet,
     company: 'Nova Wallet',
@@ -26,7 +26,7 @@ const wallets: Product[] = [
   {
     description:
       'SubWallet is the comprehensive non-custodial wallet solution for Polkadot, Substrate & Ethereum ecosystems. We envision a Web3 multiverse gateway through which users can enjoy multichain services with utmost ease and absolute security.',
-    url: 'https://subwallet.app/',
+    urls: ['https://subwallet.app/'],
     tags: ['Browser Extension', 'Mobile'],
     logo: subWallet,
     company: 'SubWallet',
