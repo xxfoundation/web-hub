@@ -46,7 +46,7 @@ const LogoContainer = styled(Box)(() => ({
   flexDirection: 'column',
   minWidth: 150,
   maxWidth: 150,
-  maxHeight: 150,
+  maxHeight: 75,
   marginRight: '0.5em'
 }));
 
