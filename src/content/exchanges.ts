@@ -36,8 +36,8 @@ const exchanges: Product[] = [
   {
     description:
       'Coinstore is a cryptocurrency exchange offering spot and futures trading globally. It features a user-friendly interface, robust security measures, and supports multiple languages. The platform provides educational resources and responsive customer support to ensure a secure and efficient trading experience for both novice and experienced traders.',
-    urls: ['https://www.coinstore.com/#/spot/WXXUSDT'],
-    tags: ['CEX', 'Wrapped'],
+    urls: ['https://www.coinstore.com/#/spot/XXUSDT', 'https://www.coinstore.com/#/spot/WXXUSDT'],
+    tags: ['CEX', 'Native', 'Wrapped'],
     logo: coinstore,
     company: 'Coinstore',
     companyUrl: 'https://www.coinstore.com/',
