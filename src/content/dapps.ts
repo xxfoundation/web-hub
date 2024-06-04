@@ -1,20 +1,19 @@
 import type { Product } from '../types';
-
 import xxmessenger from '../assets/images/logos/xx_messenger_logotype_color.svg';
 import speakeasy from '../assets/images/logos/codename_speakeasy_logotype_black.png';
 import proxxy from '../assets/images/logos/proxxy.png';
-import echoexx from '../assets/images/logos/echoexx.png'
+import phoenixx from '../assets/images/logos/phoenixx.png'
 
 const dapps: Product[] = [
   {
-    title: 'echoexx.tech',
+    title: 'phoenixx.tech',
     description:
-      'A multifaceted decentralized app combining secure wallet connections, private communication, and diverse features including chat, digital identity management, and advanced payment privacy, underpinned by the privacy-focused xx network.',
-    urls: ['https://echoexx.tech/'],
-    tags: ['Privacy', 'Web3'],
+      'A versatile dApp featuring web3-friendly private communications. Highlights include account abstraction, social login, private AI-prompts, in-group chat bill splitting, ENS integration, multi-chain support, payment requests, and encrypted IPFS file transfers, all powered by the privacy-focused xx network.',
+    urls: ['https://phoenixx.io/'],
+    tags: ['Communication', 'dApp', 'Web3'],
     company: 'BitFashioned',
     companyUrl: 'https://bitfashioned.com',
-    logo: echoexx
+    logo: phoenixx
   },
   {
     title: 'Codename Speakeasy',

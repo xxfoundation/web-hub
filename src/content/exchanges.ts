@@ -4,6 +4,7 @@ import mexc from '../assets/images/logos/mexc.png';
 import uniswap from '../assets/images/logos/uniswap.png';
 import biconomy from '../assets/images/logos/biconomy.png';
 import coinstore from '../assets/images/logos/coinstore.png';
+import lbank from '../assets/images/logos/lbank.png';
 
 const exchanges: Product[] = [
   {
@@ -28,7 +29,7 @@ const exchanges: Product[] = [
     description:
       'Biconomy is a global digital asset trading platform that provides transparent exchange services for various cryptocurrencies. It supports KYC for users in the US and Canada, and facilitates crypto purchases using Visa and Mastercard. Emphasizing blockchain\'s potential for trust and efficiency, Biconomy promotes growth and collaboration with leading partners worldwide.',
     urls: ['https://www.biconomy.com/exchange/WXX_USDT'],
-    tags: ['CEX', 'Wrapped'],
+    tags: ['CEX', 'Wrapped', 'Native'],
     logo: biconomy,
     company: 'Biconomy',
     companyUrl: 'https://www.biconomy.com',
@@ -41,6 +42,15 @@ const exchanges: Product[] = [
     logo: coinstore,
     company: 'Coinstore',
     companyUrl: 'https://www.coinstore.com/',
+  },
+  {
+    description:
+      'LBank is a global digital asset trading platform that provides transparent exchange services for various cryptocurrencies. It supports KYC for users in the US and Canada, and facilitates crypto purchases using Visa and Mastercard. Emphasizing blockchain\'s potential for trust and efficiency, LBank promotes growth and collaboration with leading partners worldwide.',
+    urls: ['https://www.lbank.com/trade/xx_usdt'],
+    tags: ['CEX', 'Native'],
+    logo: lbank,
+    company: 'LBank',
+    companyUrl: 'https://www.lbank.com/',
   },
 ];
 

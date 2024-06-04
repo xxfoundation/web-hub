@@ -34,7 +34,7 @@ const urlMappers: Record<string, (a: string) => string> = {
   email: (email: string) => `mailto:${email}`,
   github: (username: string) => `https://github.com/${username}`,
   telegram: (username: string) => `https://t.me/${username}`,
-  discord: (code: string) => `https://discord.com/invite/${code}`
+  discord: (code: string) => `https://discord.gg/${code}`
 };
 
 const possibleSocials = Object.keys(urlMappers);
