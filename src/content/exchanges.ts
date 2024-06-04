@@ -27,9 +27,18 @@ const exchanges: Product[] = [
   },
   {
     description:
+      'Founded in 2015, LBank Exchange is a top cryptocurrency trading platform. LBank Exchange provides global users with secure, professional, and convenient products and services, including Cryptocurrency Trading, Derivatives, Staking, NFT, and LBK Labs investment. LBank Exchange currently supports 50+ fiat currencies and has set up offices in different countries to deliver better services.',
+    urls: ['https://www.lbank.com/trade/xx_usdt'],
+    tags: ['CEX', 'Native'],
+    logo: lbank,
+    company: 'LBank',
+    companyUrl: 'https://www.lbank.com/',
+  },
+  {
+    description:
       'Biconomy is a global digital asset trading platform that provides transparent exchange services for various cryptocurrencies. It supports KYC for users in the US and Canada, and facilitates crypto purchases using Visa and Mastercard. Emphasizing blockchain\'s potential for trust and efficiency, Biconomy promotes growth and collaboration with leading partners worldwide.',
-    urls: ['https://www.biconomy.com/exchange/WXX_USDT'],
-    tags: ['CEX', 'Wrapped', 'Native'],
+    urls: ['https://www.biconomy.com/exchange/XX_USDT', 'https://www.biconomy.com/exchange/WXX_USDT'],
+    tags: ['CEX', 'Native', 'Wrapped'],
     logo: biconomy,
     company: 'Biconomy',
     companyUrl: 'https://www.biconomy.com',
@@ -42,15 +51,6 @@ const exchanges: Product[] = [
     logo: coinstore,
     company: 'Coinstore',
     companyUrl: 'https://www.coinstore.com/',
-  },
-  {
-    description:
-      'LBank is a global digital asset trading platform that provides transparent exchange services for various cryptocurrencies. It supports KYC for users in the US and Canada, and facilitates crypto purchases using Visa and Mastercard. Emphasizing blockchain\'s potential for trust and efficiency, LBank promotes growth and collaboration with leading partners worldwide.',
-    urls: ['https://www.lbank.com/trade/xx_usdt'],
-    tags: ['CEX', 'Native'],
-    logo: lbank,
-    company: 'LBank',
-    companyUrl: 'https://www.lbank.com/',
   },
 ];
 
