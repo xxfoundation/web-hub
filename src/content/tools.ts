@@ -1,5 +1,6 @@
 import type { Product } from '../types';
 
+import bridge from '../assets/images/icons/bridge.svg';
 import sleeve from '../assets/images/icons/sleeve.svg';
 import wallet from '../assets/images/icons/wallet.svg';
 import staking from '../assets/images/icons/staking.svg';
@@ -8,6 +9,17 @@ import cmix from '../assets/images/icons/cmix.svg';
 import foundation from '../assets/images/logos/xx-foundation-logo-color.svg';
 
 const tools: Product[] = [
+  {
+    title: 'Bridge',
+    description:
+    'Use the xx network Bridge to convert between native xx coins on the xx network blockchain and wrapped xx ERC20 tokens on the Ethereum Mainnet.',
+    urls: ['https://bridge.xx.network'],
+    tags: ['Bridge'],
+    icon: bridge,
+    logo: foundation,
+    company: 'xx Foundation',
+    companyUrl: 'https://xxfoundation.org'
+  },
   {
     title: 'Sleeve',
     description:
