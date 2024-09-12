@@ -73,22 +73,32 @@ const InternalCard: FC<Props> = ({ blank, company, description, icon, logo, tags
   return (
     <StyledCard>
       <Stack spacing={2}>
-        <Stack direction='row' sx={{justifyContent: 'space-between', minHeight:60, alignItems: 'initial'}}>
+        <Stack direction='row' sx={{justifyContent: 'space-between', minHeight: 60, alignItems: 'initial'}}>
           <Stack direction='row' spacing={1.5}>
             <ImageContainer>
               <img src={icon} alt={`${title} icon`} />
             </ImageContainer>
           </Stack>
           <Stack direction='column' justifyContent={'space-between'}>
-            {urls.map((url) => <Button variant='text' href={url} sx={{ borderRadius: '5px', p: '0.25em', minWidth: '2em', maxHeight: '2em', alignSelf: 'end'}} target={blank ? '_blank' : ''}>
-              <LaunchIcon />
-            </Button>)}
+            {urls.map((url, index) => (
+              <Button 
+                key={`${url}-${index}`}
+                variant='text' 
+                href={url} 
+                sx={{ borderRadius: '5px', p: '0.25em', minWidth: '2em', maxHeight: '2em', alignSelf: 'end'}} 
+                target={blank ? '_blank' : ''}
+              >
+                <LaunchIcon />
+              </Button>
+            ))}
           </Stack>
         </Stack>
         <Stack direction='row' sx={{justifyContent: 'space-between', alignItems: 'end', pr: '0.5em'}}>
           <ProductTitle>{title}</ProductTitle>
           <Stack direction='row' spacing={1}>
-            {tags?.map((tag) => (<Tag filled>{tag}</Tag>))}
+            {tags?.map((tag, index) => (
+              <Tag key={`${tag}-${index}`} filled>{tag}</Tag>
+            ))}
           </Stack>
         </Stack>
         <Typography variant='body3' sx={{minHeight: {xs: '150px', ml: '100px', lg: '100px'}}}>

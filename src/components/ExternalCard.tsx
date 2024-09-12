@@ -2,7 +2,7 @@
 import type { Product } from '../types'
 
 import React, { FC } from 'react';
-import { styled, Box, Typography, Stack, Button } from '@mui/material';
+import { styled, Box, Typography, Stack, Button, useMediaQuery } from '@mui/material';
 import LaunchIcon from '@mui/icons-material/Launch';
 
 import PaperWrap from './PaperWrap';
@@ -50,22 +50,42 @@ const LogoContainer = styled(Box)(() => ({
   marginRight: '0.5em'
 }));
 
+const LaunchButton: FC<{ url: string; alignSelf?: string }> = ({ alignSelf = 'end', url }) => (
+  <Button 
+    variant='text' 
+    href={url} 
+    sx={{ borderRadius: '5px', minWidth: '2em', maxHeight: '2em', alignSelf }} 
+    target='_blank'
+  >
+    <LaunchIcon />
+  </Button>
+);
+
 const ProductCard: FC<Props> = ({ company, description, logo, tags, urls }) => {
+  const isMobile = useMediaQuery('(max-width:600px)')
+
   return (
     <StyledCard>
       <Stack spacing={2}>
-        <Stack direction='row' sx={{justifyContent: 'space-between', minHeight:60, alignItems: 'center'}}>
+        <Stack spacing={2} direction={isMobile ? 'column' : 'row'} sx={{justifyContent: 'space-between', minHeight: 60, alignItems: 'center'}}>
           <LogoContainer>
             <img src={logo} alt={`${company} logo`}/>
           </LogoContainer>
           <Stack spacing={1} direction='column' sx={{ justifyContent: 'space-between', paddingBottom: '0.5em'}}>
-            <Stack direction='row' alignSelf={'end'}>
-              {urls.map((url) => <Button variant='text' href={url} sx={{ borderRadius: '5px', minWidth: '2em', maxHeight: '2em', alignSelf: 'end'}} target='_blank'>
-                <LaunchIcon />
-              </Button>)}
-            </Stack>
+            {!isMobile && (
+              <Stack direction='row' alignSelf={'end'}>
+                {urls.map((url, index) => (
+                  <LaunchButton key={`desktop-${url}-${index}`} url={url} />
+                ))}
+              </Stack>
+            )}
             <Stack direction='row' spacing={1} sx={{pr: 0.5}} alignSelf={'end'}>
-              {tags?.map((tag) => (<Tag filled>{tag}</Tag>))}
+              {tags?.map((tag, index) => (
+                <Tag key={`${tag}-${index}`} filled>{tag}</Tag>
+              ))}
+              {isMobile && urls.map((url, index) => (
+                <LaunchButton key={`mobile-${url}-${index}`} url={url} alignSelf='center' />
+              ))}
             </Stack>
           </Stack>
         </Stack>
