@@ -21,6 +21,17 @@ const tools: Product[] = [
     companyUrl: 'https://xxfoundation.org'
   },
   {
+    title: 'Superset Bridge',
+    description:
+    'Use the superset bridge to move wXX to and from chains.',
+    urls: ['/superset'],
+    tags: ['Bridge'],
+    icon: bridge,
+    logo: foundation,
+    company: 'xx Foundation',
+    companyUrl: 'https://xxfoundation.org'
+  },
+  {
     title: 'Sleeve',
     description:
     'Use this app to create your first quantum-ready wallet!\nSleeve is the novel Wallet generation algorithm used by xx network. With Sleeve, a backup quantum secure Wallet is embedded into a standard non quantum secure Wallet.',

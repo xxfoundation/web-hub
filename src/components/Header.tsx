@@ -116,7 +116,7 @@ const Header = () => (
   <StyledContainer position='static'>
     <Container maxWidth='lg'>
       <Toolbar sx={{ flexDirection: {xs: 'column', md: 'row'}, justifyContent: 'space-between'}}>
-        <Link>
+        <Link href='/'>
           <img src={hub_white} />
         </Link>
         <Stack direction={'row'} spacing={2} sx={{flexWrap: 'wrap', p: { xs: '1em 0 0 1.5em', ml: '0', lg: '0' }}}>
