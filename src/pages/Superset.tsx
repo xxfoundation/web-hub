@@ -1,5 +1,4 @@
-import { Box, Container } from '@mui/material';
-import BasicTabs from '../components/BasicTabs';
+import { Container } from '@mui/material';
 
 function Superset() {
   return (
