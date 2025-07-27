@@ -10,28 +10,6 @@ import foundation from '../assets/images/logos/xx-foundation-logo-color.svg';
 
 const tools: Product[] = [
   {
-    title: 'Bridge',
-    description:
-    'Use the xx network Bridge to convert between native xx coins on the xx network blockchain and wrapped xx ERC20 tokens on the Ethereum Mainnet.',
-    urls: ['https://bridge.xx.network'],
-    tags: ['Bridge'],
-    icon: bridge,
-    logo: foundation,
-    company: 'xx Foundation',
-    companyUrl: 'https://xxfoundation.org'
-  },
-  {
-    title: 'Superset Bridge',
-    description:
-    'Use the superset bridge to move wXX to and from chains.',
-    urls: ['/superset'],
-    tags: ['Bridge'],
-    icon: bridge,
-    logo: foundation,
-    company: 'xx Foundation',
-    companyUrl: 'https://xxfoundation.org'
-  },
-  {
     title: 'Sleeve',
     description:
     'Use this app to create your first quantum-ready wallet!\nSleeve is the novel Wallet generation algorithm used by xx network. With Sleeve, a backup quantum secure Wallet is embedded into a standard non quantum secure Wallet.',
@@ -49,17 +27,6 @@ const tools: Product[] = [
     urls: ['https://wallet.xx.network'],
     tags: ['Wallet'],
     icon: wallet,
-    logo: foundation,
-    company: 'xx Foundation',
-    companyUrl: 'https://xxfoundation.org'
-  },
-  {
-    title: 'Simple Staking',
-    description:
-    'Stake your xx coins!\nHelp secure the network and earn rewards. This app helps you stake (or unstake) your xx coins and redeem your rewards with only a handful of clicks while ensuring you retain custody of your coins.',
-    urls: ['https://staking.xx.network'],
-    tags: ['Staking'],
-    icon: staking,
     logo: foundation,
     company: 'xx Foundation',
     companyUrl: 'https://xxfoundation.org'
@@ -83,6 +50,39 @@ const tools: Product[] = [
     blank: true,
     tags: ['Dashboard'],
     icon: cmix,
+    logo: foundation,
+    company: 'xx Foundation',
+    companyUrl: 'https://xxfoundation.org'
+  },
+  {
+    title: 'Native xx Bridge',
+    description:
+    'Use the xx network Bridge to convert between native xx coins on the xx network blockchain and wrapped xx ERC20 tokens on the Ethereum Mainnet.',
+    urls: ['https://bridge.xx.network'],
+    tags: ['Bridge'],
+    icon: bridge,
+    logo: foundation,
+    company: 'xx Foundation',
+    companyUrl: 'https://xxfoundation.org'
+  },
+  {
+    title: 'Wrapped xx Superbridge',
+    description:
+    'Use Superbridge to move wrapped xx ERC20 tokens across chains. EVM, BNB, more to come.',
+    urls: ['/superset'],
+    tags: ['Bridge'],
+    icon: bridge,
+    logo: foundation,
+    company: 'xx Foundation',
+    companyUrl: 'https://xxfoundation.org'
+  },
+  {
+    title: 'Simple Staking',
+    description:
+    'Stake your xx coins!\nHelp secure the network and earn rewards. This app helps you stake (or unstake) your xx coins and redeem your rewards with only a handful of clicks while ensuring you retain custody of your coins.',
+    urls: ['https://staking.xx.network'],
+    tags: ['Staking'],
+    icon: staking,
     logo: foundation,
     company: 'xx Foundation',
     companyUrl: 'https://xxfoundation.org'
