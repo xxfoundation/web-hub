@@ -50,7 +50,7 @@ const Footer = () => {
           </Grid>
           <Grid item xs> 
             <ListLink
-              to='https://xx.network/blockchain'
+              to='https://xx.network/quantum-resistant-decentralized-blockchain/'
               underline='hover'
               rel='noopener'
               target='_blank'
@@ -58,12 +58,12 @@ const Footer = () => {
               xx blockchain
             </ListLink>
             <ListLink
-              to='https://xx.network/messenger/'
+              to='https://haven.xx.network/'
               underline='hover'
               rel='noopener'
               target='_blank'
             >
-              xx messenger
+              Haven
             </ListLink>
             <ListLink to='https://xx.network/welcome/' underline='hover' rel='noopener' target='_blank'>
               xx community
@@ -76,7 +76,7 @@ const Footer = () => {
             <ListLink to='https://xx.network/faq/' underline='hover' rel='noopener' target='_blank'>
               FAQ
             </ListLink>
-            <ListLink to='https://xx.network/contact/' underline='hover' rel='noopener' target='_blank'>
+            <ListLink to='https://xx.network/contact-xx-network/' underline='hover' rel='noopener' target='_blank'>
               Contact Us
             </ListLink>
           </Grid>
@@ -90,7 +90,7 @@ const Footer = () => {
               xx Network does not distribute, offer, solicit sales of, or sell any xx coins in any
               state or jurisdiction in which such a distribution, offer, solicitation or sale
               would be unlawful prior to registration or qualification under the securities laws
-              of any such state or jurisdiction. Copyright © 2022 xx labs SEZC |{' '}
+              of any such state or jurisdiction. Copyright © 2025 xx labs SEZC |{' '}
               <Link
                 href='https://xx.network/privacy-policy'
                 color='inherit'
@@ -105,7 +105,7 @@ const Footer = () => {
             <Socials
               socials={{
                 twitter: 'xx_network',
-                github: 'xx-labs',
+                github: 'xxfoundation',
                 telegram: 'xxnetwork',
                 discord: 'https://discord.xx.network'
               }}
