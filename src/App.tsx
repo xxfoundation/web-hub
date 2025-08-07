@@ -3,7 +3,7 @@ import './assets/styles/index.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Box, Stack } from '@mui/material';
 import Home from './pages';
-import Superset from './pages/Superset';
+import Superbridge from './pages/superbridge';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -16,7 +16,7 @@ function App() {
         <Box flexGrow={1}>
           <Routes>
             <Route path='*' element={<Home />} />
-            <Route path='/superset' element={<Superset />} />
+            <Route path='/superbridge' element={<Superbridge />} />
           </Routes>
         </Box>
         <Footer />

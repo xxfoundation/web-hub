@@ -69,7 +69,7 @@ const tools: Product[] = [
     title: 'Wrapped xx Superbridge',
     description:
     'Use Superbridge to move wrapped xx ERC20 tokens across chains. EVM, BNB, more to come.',
-    urls: ['/superset'],
+    urls: ['/superbridge'],
     tags: ['Bridge'],
     icon: bridge,
     logo: foundation,

@@ -1,6 +1,6 @@
 import { Box, Container } from '@mui/material';
 
-function Superset() {
+function Superbridge() {
   return (
     <Container maxWidth='lg' sx={{ py: 4, my: 4, bgcolor: '#1e1e1e', border: '2px solid black', borderRadius: '25px' }}>
       <Box sx={{ textAlign: 'center', 
@@ -26,4 +26,4 @@ function Superset() {
   );
 }
 
-export default Superset;
+export default Superbridge;
