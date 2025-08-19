@@ -91,14 +91,11 @@ const DocsMenu = () => {
             'aria-labelledby': 'docs-button'
           }}
         >
-          <MenuLink href='https://wiki.xx.network' rel='noopener' target='_blank' onClick={close}>
-            Wiki
+          <MenuLink href='https://learn.xx.network' rel='noopener' target='_blank' onClick={close}>
+            Learn
           </MenuLink>
-          <MenuLink href='https://xxdk-dev.xx.network/' rel='noopener' target='_blank' onClick={close}>
+          <MenuLink href='https://learn.xx.network/cmixx/xxdk/overview' rel='noopener' target='_blank' onClick={close}>
             xxDK Dev
-          </MenuLink>
-          <MenuLink href='https://dashboard-api.xx.network/v1/docs/' rel='noopener' target='_blank' onClick={close}>
-            cmix Dashboard API
           </MenuLink>
           <MenuLink href='https://blockchainapi.xx.network/' rel='noopener' target='_blank' onClick={close}>
             Blockchain API
@@ -116,7 +113,7 @@ const Header = () => (
   <StyledContainer position='static'>
     <Container maxWidth='lg'>
       <Toolbar sx={{ flexDirection: {xs: 'column', md: 'row'}, justifyContent: 'space-between'}}>
-        <Link>
+        <Link href='/'>
           <img src={hub_white} />
         </Link>
         <Stack direction={'row'} spacing={2} sx={{flexWrap: 'wrap', p: { xs: '1em 0 0 1.5em', ml: '0', lg: '0' }}}>
