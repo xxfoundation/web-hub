@@ -2,8 +2,6 @@ import type { Product } from '../types';
 
 import mexc from '../assets/images/logos/mexc.png';
 import uniswap from '../assets/images/logos/uniswap.png';
-import coinstore from '../assets/images/logos/coinstore.png';
-import lbank from '../assets/images/logos/lbank.png';
 
 const exchanges: Product[] = [
   {
@@ -23,24 +21,6 @@ const exchanges: Product[] = [
     logo: uniswap,
     company: 'Uniswap',
     companyUrl: 'https://uniswap.org/',
-  },
-  {
-    description:
-      'Founded in 2015, LBank Exchange is a top cryptocurrency trading platform. LBank Exchange provides global users with secure, professional, and convenient products and services, including Cryptocurrency Trading, Derivatives, Staking, NFT, and LBK Labs investment. LBank Exchange currently supports 50+ fiat currencies and has set up offices in different countries to deliver better services.',
-    urls: ['https://www.lbank.com/trade/xx_usdt'],
-    tags: ['CEX', 'Native'],
-    logo: lbank,
-    company: 'LBank',
-    companyUrl: 'https://www.lbank.com/',
-  },
-  {
-    description:
-      'Coinstore is a cryptocurrency exchange offering spot and futures trading globally. It features a user-friendly interface, robust security measures, and supports multiple languages. The platform provides educational resources and responsive customer support to ensure a secure and efficient trading experience for both novice and experienced traders.',
-    urls: ['https://www.coinstore.com/#/spot/XXUSDT', 'https://www.coinstore.com/#/spot/WXXUSDT'],
-    tags: ['CEX', 'Native', 'Wrapped'],
-    logo: coinstore,
-    company: 'Coinstore',
-    companyUrl: 'https://www.coinstore.com/',
   },
 ];
 
