@@ -4,8 +4,32 @@ import novaWallet from '../assets/images/logos/novawallet.png';
 import subWallet from '../assets/images/logos/subwallet.png';
 import talisman from '../assets/images/logos/talisman.svg';
 import fearless from '../assets/images/logos/fearless.svg';
+import wallet from '../assets/images/icons/wallet.svg';
+import foundation from '../assets/images/logos/xx-foundation-logo-color.svg';
 
 const wallets: Product[] = [
+  {
+    title: 'Web Wallet',
+    description:
+    'Use the official web-based wallet app to create quantum-ready wallets, stake your xx coins, and vote on network issues. This is the most complex and complete tool used to interact with xx network blockchain.',
+    urls: ['https://wallet.xx.network'],
+    tags: ['Wallet'],
+    icon: wallet,
+    logo: foundation,
+    company: 'xx Foundation',
+    companyUrl: 'https://xxfoundation.org'
+  },
+  {
+    title: 'xx Wallet',
+    description:
+    'xx Wallet is the official mobile wallet, installable straight from the browser to your home screen on iOS and Android. Send and receive xx coins, track your balance, and manage your accounts from your phone.',
+    urls: ['https://mobile.xx.network'],
+    tags: ['Wallet', 'PWA'],
+    icon: wallet,
+    logo: foundation,
+    company: 'xx Foundation',
+    companyUrl: 'https://xxfoundation.org'
+  },
   {
     description:
       'Talisman is a leading non-custodial browser extension wallet designed for Polkadot and Ethereum, with support over 180 networks. It\'s an ultra-secure wallet that simplifies web3 for beginners and unleashes advanced capabilities for experts. Being multi-chain by design, it enables seamless interaction with diverse blockchains.',
