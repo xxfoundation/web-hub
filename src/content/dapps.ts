@@ -2,6 +2,7 @@ import type { Product } from '../types';
 import xxmessenger from '../assets/images/logos/xx_messenger_logotype_color.svg';
 import speakeasy from '../assets/images/logos/haven-logo.svg';
 import proxxy from '../assets/images/logos/proxxy.png';
+import conexxus from '../assets/images/logos/conexxus.svg';
 
 const dapps: Product[] = [
   {
@@ -13,6 +14,16 @@ const dapps: Product[] = [
     company: 'Elixxir',
     companyUrl: 'https://elixxir.io',
     logo: speakeasy
+  },
+  {
+    title: 'co-nexx.us',
+    description:
+      'A social network where you are not the product.\nDirect messages, group chats, and feeds, all carried over the cMixx mixnet so that neither the contents of a conversation nor the metadata around it is left behind for anyone to collect. There are no ads, no algorithmic feed, and no account to hand over. Currently in public alpha.',
+    urls: ['https://co-nexx.us'],
+    tags: ['Private Social Network'],
+    company: 'co-nexx.us',
+    companyUrl: 'https://co-nexx.us',
+    logo: conexxus
   },
   {
     title: 'Proxxy',

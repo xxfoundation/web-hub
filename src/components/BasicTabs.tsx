@@ -44,6 +44,19 @@ function a11yProps(index: number) {
   };
 }
 
+// Card shape follows the data, not the tab: anything carrying an `icon` is an
+// xx Foundation product and gets the titled InternalCard; everything else is a
+// third party and gets ExternalCard, which renders neither `title` nor `icon`.
+const CardGrid = ({ items }: { items: Product[] }) => (
+  <Grid spacing={5} container>
+    {items.map((item: Product) => (
+      <Grid key={item.urls[0]} md={6} sm={12} xs={12} item>
+        {item.icon ? <InternalCard {...item} /> : <ExternalCard {...item} />}
+      </Grid>
+    ))}
+  </Grid>
+);
+
 const TabTitles = () => (
   categories.map((category, index) => (
       <Tab
@@ -78,49 +91,19 @@ export default function BasicTabs() {
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        <Grid spacing={5} container>  
-          {tools.map((app: Product) => (
-            <Grid md={6} sm={12} xs={12} item>
-              <InternalCard {...app} />
-            </Grid>
-          ))}
-        </Grid>
+        <CardGrid items={tools} />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <Grid spacing={5} container>  
-          {wallets.map((wallet: Product) => (
-            <Grid md={6} sm={12} xs={12} item>
-              <ExternalCard {...wallet} />
-            </Grid>
-          ))}
-        </Grid>
+        <CardGrid items={wallets} />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        <Grid spacing={5} container>  
-          {dapps.map((dapp: Product) => (
-            <Grid md={6} sm={12} xs={12} item>
-              <ExternalCard {...dapp} />
-            </Grid>
-          ))}
-        </Grid>
+        <CardGrid items={dapps} />
       </TabPanel>
       <TabPanel value={value} index={3}>
-        <Grid spacing={5} container>  
-          {partners.map((partner: Product) => (
-            <Grid md={6} sm={12} xs={12} item>
-              <ExternalCard {...partner} />
-            </Grid>
-          ))}
-        </Grid>
+        <CardGrid items={partners} />
       </TabPanel>
       <TabPanel value={value} index={4}>
-        <Grid spacing={5} container>  
-          {exchanges.map((exchange: Product) => (
-            <Grid md={6} sm={12} xs={12} item>
-              <ExternalCard {...exchange} />
-            </Grid>
-          ))}
-        </Grid>
+        <CardGrid items={exchanges} />
       </TabPanel>
     </Box>
   );

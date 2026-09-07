@@ -3,12 +3,12 @@ import type { Product } from '../types';
 import polkastats from '../assets/images/logos/polkastats.png';
 import polkassembly from '../assets/images/logos/polkassembly.svg';
 // import dwellir from '../assets/images/logos/dwellir.svg';
-import subsquid from '../assets/images/logos/subsquid.svg'
+import sqd from '../assets/images/logos/sqd.svg'
 import onfinality from '../assets/images/logos/onfinality.png';
 import crust from '../assets/images/logos/crust.png';
 import zondax from '../assets/images/logos/zondax.png';
 import chainsafe from '../assets/images/logos/chainsafe.png';
-import worldcoin from '../assets/images/logos/worldcoin.png';
+import world from '../assets/images/logos/world.svg';
 import carbon from '../assets/images/logos/carbon.png';
 
 const partners: Product[] = [
@@ -23,12 +23,12 @@ const partners: Product[] = [
   },
   {
     description:
-      'Worldcoin aims to create a global digital currency, emphasizing privacy with its "Orb" device for secure, anonymous biometric ID. Partnering with the xx Network, it seeks to enhance privacy protections, advancing its mission for financial inclusion and a decentralized economy.',
-    urls: ['https://worldcoin.org/'],
+      'World aims to create a global identity and financial network, emphasizing privacy with its "Orb" device for secure, anonymous proof of personhood. Partnering with the xx network, the World Foundation seeks to enhance privacy protections, advancing its mission for financial inclusion and a decentralized economy.',
+    urls: ['https://world.org/'],
     tags: ['R&D', 'Grants', 'Privacy'],
-    logo: worldcoin,
-    company: 'Wordcoin Foundation',
-    companyUrl: 'https://www.worldcoin.foundation/'
+    logo: world,
+    company: 'World Foundation',
+    companyUrl: 'https://foundation.world.org/'
   },
   {
     description:
@@ -59,12 +59,12 @@ const partners: Product[] = [
   },
   {
     description:
-    'The most dev-friendly way to develop and deploy custom GraphQL APIs and ETLs for advanced blockchain use cases. Squid SDK is a complete indexing toolkit and hosted service for the next generation of dApps, on-chain analytics, and world-changing blockchain tech.',
-    urls: ['https://subsquid.io/'],
+    'The onchain data layer for dApps, analytics, wallets and payments. SQD serves real-time and historical blockchain data across 130+ networks through a decentralized data network, a streaming Portal API, an SDK for transforming that data, and a managed cloud to run it all on.',
+    urls: ['https://sqd.dev/'],
     tags: ['API Dev'],
-    logo: subsquid,
-    company: 'Subsquid',
-    companyUrl: 'https://subsquid.io'
+    logo: sqd,
+    company: 'SQD',
+    companyUrl: 'https://sqd.dev'
   },
   {
     description:
@@ -77,9 +77,9 @@ const partners: Product[] = [
   },
   {
     description:
-      'An alternative to the official xx network block explorer.\nPolkastats allows you to connect to the polkadot-js extension to easily select, compare and nominate validators.',
-    urls: ['https://xx.polkastats.io/'],
-    tags: ['Explorer'],
+      'Polkastats built one of the first block explorers in the Polkadot ecosystem, and the explorer that served xx network. The team works as a blockchain engineering group, building explorers, indexers and data tooling for Substrate and Cosmos chains.',
+    urls: ['https://polkastats.io/'],
+    tags: ['R&D'],
     logo: polkastats,
     company: 'Polkastats',
     companyUrl: 'https://polkastats.io'

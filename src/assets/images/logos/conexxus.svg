@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="184" height="40" viewBox="20 0 460 100" role="img" aria-label="co-nexx.us">
+  <!--
+    co-nexx.us wordmark, ported for web-hub from the app's design system
+    (components.css .wm-glyph): font-weight 500, tracking -0.04em, the xx-net
+    mark at 0.85em tall x 0.901 ratio with 0.06em side margins, drawn here at
+    font-size 88 so the glyph lands at 67x75 on the baseline at y=78.
+
+    Two things differ from the app's own wordmark.svg, and both are required
+    because ExternalCard renders this through <img src>, which is a closed
+    context: external CSS never reaches it and webfonts never load.
+      1. The type spec is written as attributes, not as a `class="wm"` hook.
+         The app's file relies on a `.wm` rule that does not exist anywhere,
+         so it renders as default serif at ~16px.
+      2. Geist cannot load, so the run widths are pinned with textLength +
+         lengthAdjust="spacing". Whichever fallback resolves, the wordmark
+         occupies the same box and stays hugged to the mark on both sides.
+  -->
+  <g font-family="Geist, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="88" font-weight="500" letter-spacing="-3.52" fill="#000000">
+    <text x="53" y="78" textLength="202" lengthAdjust="spacing">co-ne</text>
+    <text x="332" y="78" textLength="107" lengthAdjust="spacing">.us</text>
+  </g>
+  <g transform="translate(260, 10)" fill="#FF6B1A">
+    <svg width="67" height="75" viewBox="131 118 238 264">
+      <path d="M309.9,170.5c6,13.2,9.3,27.6,9.3,42.7c0,0.5,0.1,0.9,0.1,1.4l49.5-44v-52.5L309.9,170.5z" fill="#FF6B1A"/>
+      <path d="M303.5,213.3c0-52.4-46.9-95.1-104.5-95.1v39.2c35.2,0,63.9,23.9,65.2,53.7l-26.7,23.7c7.1,12.4,11.7,26.1,13.3,40.7l23.8-21.1c16.9,31.9,52.8,53.9,94.2,53.9v-39.2C332.8,269.1,303.5,244,303.5,213.3z" fill="#FF6B1A"/>
+      <path d="M301,381.5v-39.2c-36,0-65.3-25-65.3-55.8c0-52.4-46.9-95.1-104.5-95.1v39.2c30.6,0,56.3,18.1,63.3,42.4l-63.3,56.3v52.5l71.4-63.4C217,355.1,255.7,381.5,301,381.5z" fill="#FF6B1A"/>
+    </svg>
+  </g>
+</svg>
